@@ -1,8 +1,8 @@
 diff --git a/Makefile b/Makefile
-index 79e1908..b8a6507 100644
+index 5386577..54d2d5c 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -256,7 +256,7 @@ $(BUILD_IMAGE): bin/calico-typha-$(ARCH) register
+@@ -263,7 +263,7 @@ $(BUILD_IMAGE): bin/calico-typha-$(ARCH) register
  	rm -rf docker-image/bin
  	mkdir -p docker-image/bin
  	cp bin/calico-typha-$(ARCH) docker-image/bin/
@@ -11,3 +11,4 @@ index 79e1908..b8a6507 100644
  ifeq ($(ARCH),amd64)
  	docker tag $(BUILD_IMAGE):latest-$(ARCH) $(BUILD_IMAGE):latest
  endif
+
