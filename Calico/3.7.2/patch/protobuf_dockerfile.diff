@@ -7,7 +7,7 @@
 +RUN rm -vrf /go/src/github.com/gogo/protobuf/*
 +RUN go get -d github.com/gogo/protobuf/proto
 +WORKDIR /go/src/github.com/gogo/protobuf
-+RUN git checkout v1.2.1
++RUN git checkout v1.0.0
 +WORKDIR /src
  RUN go get github.com/gogo/protobuf/proto \
         github.com/gogo/protobuf/protoc-gen-gogo \
